@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="only screen and (min-device-width : 820px) and (max-device-width : 1180px) and (orientation : portrait)" href="tablette.css">
+    <link rel="stylesheet" media="only screen and (device-width : 375px) and (device-height : 812px)" href="phone.css">
+    <script src="script.js" defer></script>
+    <title>calculette pourboires</title>
+</head>
+<body>
+    <main>
+        <div id="fond1">
+            <div id="fond2" class="boxin">
+                 
+                <section id="saisie">
+                    
+                    <div id="bouton_pourcent">
+                        <input type="button"  id="b5" class="bout1 boxout" value="5">
+                        <input type="button"  id="b10" class="bout1 boxout" value="10">
+                        <input type="button"  id="b15" class="bout1 boxout" value="15">
+                        <input type="button"  id="b25" class="bout1 boxout" value="25">
+                        <input type="button"  id="b50" class="bout1 boxout" value="50">
+                                               
+                    </div>
+                    <div id="cadre" class="boxout">
+                        <form name="calculatrice" action="">   <!-- onSubmit="resultat();"-->
+                        <div id="ecran" class="boxin">
+                        
+                        <p id="t_addition">Total de l'addition :</p>
+                        <div class="addition" name="addition" type="number" id="inpt_add"></div>
+                        <img id="addition_img" src="images/euro.png" alt="" width="37" height="37">
+                        <img id="addition_img2" src="images/flecheUP27.png">
+                        
+                        <p id="t_pourcent">Pourcentage choisi :</p>
+                        <div id="pourcent" name="pourcent" type="number" value="0"></div>
+                        <img id="pourcentage_img" src="images/pourcentage.png" alt="" width="33" height="33">
+                        
+                        <p id="t_personne">Nombre de personnes :</p>
+                        <div class="personne" name="personne" type="number" id="inpt_gens"></div>
+                        <img id="personne_img" src="images/gens.png" alt=""  width="32" height="32">
+                        <img id="personne_img2" src="images/flecheDown27.png">
+                        
+                        <p id="t_pourboire">Pourboire par personnes :</p>
+                        <div class="pourboire" id="popo" name="pourboire" type="number" value="0"></div>
+                        <img id="pourboire_img" src="images/euro.png" alt=""  width="37" height="37">
+                        
+                        <p id="t_total">Total des pourboires :</p>
+                        <div class="total" id="toto" name="total" type="number" value="0"></div>
+                        <img id="total_img" src="images/euro.png" alt=""  width="37" height="37">
+                    
+                    </div>
+                </form>
+                        <div id="erreur"></div>
+                    </div>
+                </section>
+                
+                <section id="barre_pourcent">
+                    <div id="text">
+                    <p class="petit" id="texte1">0</p>
+                    <p class="petit" id="texte2">max 500%</p>
+                    </div>
+                    <div id="ligne">
+                        <input type="range" id="my-slider" min="0" max="500" value="50" oninput="slider()">
+                            
+                       
+                    </div>
+                </section>
+            <!-- section présentant la saisie clavier -->
+                <section class="touches" id="clavier">
+                    <button data-key="97" class="saisie bout2 boxout" id="bouton1">1</button> 
+                    <button data-key="98" class="saisie bout2 boxout" id="bouton2">2</button>
+                    <button data-key="99" class="saisie bout2 boxout" id="bouton3">3</button>
+                    <button data-key="100" class="saisie bout2 boxout" id="bouton4">4</button>
+                    <button data-key="101" class="saisie bout2 boxout" id="bouton5">5</button>
+                    <button data-key="102" class="saisie bout2 boxout" id="bouton6">6</button>
+                    <button data-key="103" class="saisie bout2 boxout" id="bouton7">7</button>
+                    <button data-key="104" class="saisie bout2 boxout" id="bouton8">8</button>
+                    <button data-key="105" class="saisie bout2 boxout" id="bouton9">9</button>
+                    <button data-key="96" class="saisie bout2 boxout" id="bouton10">0</button>
+                    <button data-key="110" class="saisie bout2 boxout" id="bouton11">.</button>
+                    <button data-key="13" class="valclic bout3 boxout" id="bouton_valider">Valider</button>
+                    <button data-key="46" class="valclic bout4 boxout" id="bouton_reset">reset</button>
+                    <button data-key="38" class="bton bout5 boxout" id="bouton_up" value="0"></button>
+                    <button data-key="40" class="bton bout6" id="bouton_down" value="1"></button>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

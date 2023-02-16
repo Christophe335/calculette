@@ -1,0 +1,302 @@
+/* responsive pour format iphone X, XS, 11 Pro */
+@media only screen and (device-width : 375px) and (device-height : 812px) {
+
+    body {
+        background-color: var(--blg2);
+    }
+    
+    main {
+        width: 23.4375rem;
+        margin-top: 0;
+    }
+/* elements  communs */
+    h1 {
+       display: none;
+    }
+
+    #bouton_pourcent {
+        display: grid;
+        grid-template-columns: 3.9375rem 3.9375rem 3.9375rem 3.9375rem 3.125rem;
+        grid-template-rows: 1fr;
+        margin-left: 0;
+        margin-top: 4.375rem;
+        margin-bottom: 0.75rem;
+    }
+    #b5 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #b10 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #b15 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #b25 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    #b50 {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+
+    .bout1 {
+        width: 3.125rem;
+        height: 3.125rem;
+        padding-top: 0.25rem;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    .bout2 {
+        width: 5rem;
+        height: 3.4375rem;
+        font-size: 2rem;
+        line-height: 2.75rem;
+        padding-top: 0.25rem;
+    }
+    
+    .bout3 {
+        width: 5rem;
+        height: 3.4375rem;
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+    }
+
+    .bout4 {
+        width: 5rem;
+        height: 3.4375rem;
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+    }
+
+    .bout5, .bout6 {
+        width: 5rem;
+        height: 3.875rem;
+    }
+   
+    .bout5::after {
+        content:url(images/flecheUP45.png);
+        top: 0.625rem;
+        left: 1rem;
+    }
+    .bout6::after {
+        content:url(images/flecheDown45.png);
+        top: 0.625rem;
+        left: 1rem;
+    }
+    /* les fonds de page en format téléphone */
+    #fond1 {
+        width: 23.4375rem;
+        height: 50.75rem;
+    }
+
+    #fond2 {
+        width: 22.8125rem;
+        height: 50.125rem;
+    }
+
+    #saisie {
+        flex-direction: column-reverse;
+        padding-left: 1.8125rem;
+        padding-right: 1.8125rem;
+        padding-top: 2.25rem;
+    }
+
+    #cadre {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 310px;
+        height: 190px;
+    }
+
+
+    #t_addition {
+        visibility: hidden;
+    }
+    #t_addition::after {
+        content:"Addition :";
+        visibility: visible;
+        position: absolute;
+        left: 4.0625rem;
+        top: 1.25rem;
+    }
+
+    #t_pourcent {
+        visibility: hidden;
+    }
+    #t_pourcent::after {
+        content:"Pourcentage :";
+        visibility: visible;
+        position: absolute;
+        left: 1.125rem;
+        top: 3.3125rem;
+    }
+
+    #t_personne {
+        visibility: hidden;
+    }
+    #t_personne::after {
+        content:"Nb Personnes :";
+        visibility: visible;
+        position: absolute;
+        left: 0.625rem;
+        top: 5.375rem;
+    }
+
+    #t_pourboire {
+        visibility: hidden;
+    }
+    #t_pourboire::after {
+        content:"Pourboire :";
+        visibility: visible;
+        position: absolute;
+        left: 3.25rem;
+        top: 7.4375rem;
+    }
+
+    #t_total {
+        visibility: hidden;
+    }
+    #t_total::after {
+        content:"Total :";
+        visibility: visible;
+        position: absolute;
+        left: 6.25rem;
+        top: 9.5rem;
+    }
+
+    #ecran {
+        width: 17.5rem;
+        height: 12.4375rem;
+        grid-template-columns: 8.125rem 6.25rem 1.625rem;
+        grid-template-rows: 2.0625rem 2.0625rem 2.0625rem 2.0625rem 2.0625rem;
+        column-gap: 0.3125rem;
+        margin: 0;
+    
+    }
+
+    .addition, #pourcent, .personne, .pourboire, .total {
+        font-size: 2rem;
+        line-height: 2.625rem;
+    }
+
+    #addition_img, #pourboire_img, #total_img,  #pourcentage_img, #personne_img {
+        width: 1.5625rem;
+        height: 1.5625rem;
+    }
+   
+
+    /* barre des pourcentages */
+    #ligne {
+        width: 19.375rem;
+        margin: 0 0 2.5rem 1.5rem;
+    }
+
+    #my-slider {
+        width: 19.375rem;
+    }
+
+    #texte1 {
+        margin-left: 1.875rem;
+    }
+
+    #texte2 {
+        margin-left:15rem;
+    }  
+   
+    
+    input[type="range"]::-webkit-slider-thumb {
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-top: -0.75rem;
+    }
+    input[type="range"]::-moz-range-thumb {
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-top: -0.75rem;
+    }
+    input[type="range"]::-ms-thumb {
+        height: 1.75rem;
+        width: 1.75rem;
+        margin-top: -0.75rem;
+    }
+
+    /* section clavier */
+    #clavier {
+        display: grid;
+        grid-template-columns: 7.0625rem 7.0625rem 5rem;
+        grid-template-rows: 4.3125rem 4.3125rem 4.3125rem 4.3125rem 3.4375rem;
+        margin-left: 2.125rem;
+        margin-top: 0;
+    }
+    
+    
+    #bouton1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #bouton2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #bouton3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #bouton4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #bouton5 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    #bouton_valider {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    #bouton_up {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    #bouton_down {
+        grid-column: 3;
+        grid-row: 5;
+    }
+    #bouton6 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    #bouton7 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #bouton8 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #bouton9 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #bouton10 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    #bouton11 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    #bouton_reset {
+        grid-column: 2;
+        grid-row: 5;
+    }
+}
+
+

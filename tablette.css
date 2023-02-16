@@ -1,0 +1,280 @@
+/* responsive pour format Ipad */
+@media only screen and (min-device-width : 820px) and (max-device-width : 1180px) and (orientation : portrait) {
+    body {
+        background-color: var(--blg2);
+    }
+    
+    main {
+        width: 51.25rem;
+        margin-top: 0;
+    }
+/* elements  communs */
+    h1 {
+        margin-top: 3.0625rem;
+        margin-bottom: 1.6875rem;
+        font-size: 1.875rem;
+        line-height: 2.5625rem;
+    }
+
+    
+    #bouton_pourcent {
+        display: grid;
+        grid-template-columns: 8.75rem 8.75rem 8.75rem 8.75rem 5.3125rem;
+        grid-template-rows: 1fr;
+        margin-left: 2rem;
+        margin-top: 3.0625rem;
+    }
+    #b5 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #b10 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #b15 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #b25 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    #b50 {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+    .bout1 {
+        width: 5.3125rem;
+        height: 4.9375rem;
+        padding-top: 0;
+        font-size: 2rem;
+        line-height: 2.375rem;
+        margin-bottom: 3.4375rem;
+    }
+
+    .bout2 {
+        width: 6.875rem;
+        height: 4.375rem;
+        font-size: 3.125rem;
+        line-height: 4.25rem;
+        padding-top: 0.25rem;
+    }
+    
+.bout3 {
+    width: 9.5rem;
+    height: 10.0625rem;
+}
+
+    .bout4 {
+        width: 6.875rem;
+        height: 4.375rem;
+    }
+    .bout5, .bout6 {
+        width: 9.5rem;
+        height: 5.125rem;
+    }
+
+    .bout5::after {
+        content:url(images/flecheUP45.png);
+        top: 1rem;
+        left: 3.25rem;
+    }
+    .bout6 {
+        top: -0.875rem;
+    }
+    .bout6::after {
+        content:url(images/flecheDown45.png);
+        top: 1rem;
+        left: 3.25rem;
+    }
+    /* les fonds de page en format tablette ipad */
+    #fond1 {
+        width: 51.25rem;
+        height: 73.75rem;
+        border-radius: none;
+    }
+
+    #fond2 {
+        width: 50.625rem;
+        height: 73.125rem;
+    }
+
+    #saisie {
+        flex-direction: column-reverse;
+        padding-left: 3.4375rem;
+    }
+
+    #cadre {
+        width: 44.1875rem;
+        height: 18.8125rem;
+        border-radius: 0.625rem;
+        margin-left: 0;
+    }
+
+    
+
+    #t_addition {
+        visibility: hidden;
+    }
+    #t_addition::after {
+        content:"Total addition :";
+        visibility: visible;
+        position: absolute;
+        left: 14.75rem;
+    }
+
+    #t_pourcent {
+        visibility: hidden;
+    }
+    #t_pourcent::after {
+        content:"Pourcentage :";
+        visibility: visible;
+        position: absolute;
+        left: 15.1875rem;
+    }
+
+    #t_total {
+        visibility: hidden;
+    }
+    #t_total::after {
+        content:"Total :";
+        visibility: visible;
+        position: absolute;
+        left: 20.375rem;
+    }
+    #t_personne {
+        margin-left: 1.5625rem;
+    }
+
+    #ecran {
+        width: 38.125rem;
+        height: 15rem;
+        padding-top: 0.3125rem;
+        padding-left: 2.5rem;
+        margin-left: 1.875rem;
+        column-gap: 2.5rem;
+    }
+
+    .addition, #pourcent, .personne, .pourboire, .total {
+        font-size: 3rem;
+        line-height: 3.25rem;
+        width: 9.375rem;
+        height:3rem;
+    }
+
+    #addition_img, #pourboire_img, #total_img {
+        width: 2.625rem;
+        height: 2.625rem;
+    }
+    #pourcentage_img, #personne_img {
+        width: 2.125rem;
+        height: 2.125rem;
+    }
+
+    /* barre des pourcentages */
+    #ligne {
+        width: 41.125rem;
+        margin: 0 0 5rem 4.5rem;
+    }
+
+    #my-slider {
+        width: 658px;
+    }
+
+    #texte1 {
+        margin-left: 75px;
+    }
+
+    #texte2 {
+        margin-left: 588px;
+    }
+        
+    input[type="range"]::-webkit-slider-thumb {
+        height: 28px;
+        width: 28px;
+        margin-top: -12px;
+    }
+    input[type="range"]::-moz-range-thumb {
+        height: 28px;
+        width: 28px;
+        margin-top: -12px;
+    }
+    input[type="range"]::-ms-thumb {
+        height: 28px;
+        width: 28px;
+        margin-top: -12px;
+    }
+
+    /* section clavier */
+    #clavier {
+        display: grid;
+        grid-template-columns: 154px 154px 193px 152px;
+        grid-template-rows: 95px 95px 95px 95px;
+        margin-left: 80px;
+        margin-top: 22px;
+    }
+    
+    
+    #bouton1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #bouton2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #bouton3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    #bouton4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #bouton5 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    #bouton_valider {
+        grid-column: 4;
+        grid-row: 3/5;
+    }
+    #bouton_up {
+        grid-column: 4;
+        grid-row: 1;
+    }
+    #bouton_down {
+        grid-column: 4;
+        grid-row: 2;
+    }
+    #bouton6 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    #bouton7 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #bouton8 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #bouton9 {
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #bouton10 {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    #bouton11 {
+        grid-column: 3;
+        grid-row: 4;
+    }
+    #bouton_reset {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
